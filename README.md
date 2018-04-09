@@ -1,0 +1,1 @@
+# Scala-For-The-Impatient-exercies
