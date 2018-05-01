@@ -14,5 +14,4 @@ lazy val root = project
 
 lazy val five = (project in file("five"))
   .settings(baseSettings: _*)
-  .settings(Defaults.itSettings: _*)
   .settings(name := "five")
