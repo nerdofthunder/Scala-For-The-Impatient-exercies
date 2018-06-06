@@ -7,9 +7,8 @@ object ImpatientTestKit {
     """[^a-zA-Z0-9]""".r.replaceAllIn(inputClass.getCanonicalName, "_")
 }
 
-class ImpatientTestKit extends TestKit
-  with FunSpecLike
-  with Matchers
-  with BeforeAndAfterEach
-  with Eventually
-  with Inside
+class ImpatientTestKit
+    extends FunSpecLike
+    with Matchers
+    with BeforeAndAfterEach
+    with Inside
