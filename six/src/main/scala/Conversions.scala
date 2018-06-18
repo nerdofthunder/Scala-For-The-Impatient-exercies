@@ -1,15 +1,19 @@
 package patmcdermott.six
 
-object Conversions {
-  def inchesToCentimeters(inches: Double): Double = {
+object InchesToCentimeters extends UnitConversion {
+  override def convert(inches: Double): Double = {
     inches * 2.54
   }
+}
 
-  def gallonsToLiters(gallons: Double): Double = {
+object GallonsToLiters extends UnitConversion {
+  override def convert(gallons: Double): Double = {
     gallons * 3.785411784
   }
+}
 
-  def milesToKilometers(miles: Double): Double = {
+object MilesToKilometers extends UnitConversion {
+  override def convert(miles: Double): Double = {
     miles * 1.609344
   }
 }
