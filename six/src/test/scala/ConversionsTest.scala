@@ -7,5 +7,8 @@ class ConversionsTest extends ImpatientTestKit {
     it("should convert inches to centimeters") {
       assert(5.08 === Conversions.inchesToCentimeters(2))
     }
+    it("should convert gallons to liters") {
+      assert(3.785411784 === Conversions.gallonsToLiters(1))
+    }
   }
 }
