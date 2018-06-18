@@ -13,5 +13,4 @@ class CounterTest extends ImpatientTestKit {
       assert(Int.MaxValue === counter.current())
     }
   }
-
 }
