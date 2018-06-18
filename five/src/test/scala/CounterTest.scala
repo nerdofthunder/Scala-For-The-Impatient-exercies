@@ -1,6 +1,7 @@
 package patmcdermott.five
 
 import patmcdermott.util._
+
 class CounterTest extends ImpatientTestKit {
   describe("counter increment") {
     it("should not exceed integer boundary") {
