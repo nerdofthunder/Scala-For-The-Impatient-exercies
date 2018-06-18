@@ -10,5 +10,8 @@ class ConversionsTest extends ImpatientTestKit {
     it("should convert gallons to liters") {
       assert(3.785411784 === Conversions.gallonsToLiters(1))
     }
+    it("should convert miles to kilometers") {
+      assert(1.609344 === Conversions.milesToKilometers(1))
+    }
   }
 }
