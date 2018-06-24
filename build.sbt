@@ -15,6 +15,7 @@ lazy val root = project
   .aggregate(
     five,
     six,
+    eight,
     util)
 
 lazy val five = (project in file("five"))
@@ -27,6 +28,13 @@ lazy val five = (project in file("five"))
 lazy val six = (project in file("six"))
   .settings(baseSettings: _*)
   .settings(name := "six")
+  .configs(IntegrationTest)
+  .settings(Defaults.itSettings: _*)
+  .dependsOn(util % "it, test->test;compile->compile")
+
+lazy val eight = (project in file("eight"))
+  .settings(baseSettings: _*)
+  .settings(name := "eight")
   .configs(IntegrationTest)
   .settings(Defaults.itSettings: _*)
   .dependsOn(util % "it, test->test;compile->compile")
